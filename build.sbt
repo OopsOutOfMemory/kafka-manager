@@ -59,30 +59,11 @@ coverageExcludedPackages := "<empty>;controllers.*;views.*;models.*"
  */
 enablePlugins(SbtNativePackager)
 
-/* Debian Settings - to create, run as:
-   $ sbt debian:packageBin
 
-   See here for details:
-   http://www.scala-sbt.org/sbt-native-packager/formats/debian.html
-*/
 
 maintainer := "Yahoo <yahoo@example.com>"
+
 packageSummary := "A tool for managing Apache Kafka"
+
 packageDescription := "A tool for managing Apache Kafka"
 
-/* End Debian Settings */
-
-
-/* RPM Settings - to create, run as:
-   $ sbt rpm:packageBin
-
-   See here for details:
-   http://www.scala-sbt.org/sbt-native-packager/formats/rpm.html
-*/
-
-rpmRelease := "1"
-rpmVendor := "yahoo"
-rpmUrl := Some("https://github.com/yahoo/kafka-manager")
-rpmLicense := Some("Apache")
-
-/* End RPM Settings */
